@@ -30,10 +30,10 @@ include:
   #  shield: kurnikas-split-lp-left-central
 
   # Default: Nice nano based dongle - left and right peripheral parts
-   - board: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble
      shield: kurnikas-split-lp-dongle
      cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_BUILD_OUTPUT_UF2=y
-   - board: nice_nano_v2
+  - board: nice_nano_v2
      shield: kurnikas-split-lp-left-peripheral
   
   - board: nice_nano_v2
