@@ -21,18 +21,20 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
 
   # Default: No dongle left hand side is the central and right is peripheral
   # Comment out and uncomment below for dongle mode
-  - board: nice_nano_v2
-    shield: kurnikas-split-lp-left-central
+  # - board: nice_nano_v2
+  #  shield: kurnikas-split-lp-left-central
 
   # Default: Nice nano based dongle - left and right peripheral parts
-  # - board: nice_nano_v2
-  #   shield: kurnikas-split-lp-dongle
-  #   cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_BUILD_OUTPUT_UF2=y
-  # - board: nice_nano_v2
-  #   shield: kurnikas-split-lp-left-peripheral
+   - board: seeeduino_xiao_ble
+     shield: kurnikas-split-lp-dongle
+     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_BUILD_OUTPUT_UF2=y
+   - board: nice_nano_v2
+     shield: kurnikas-split-lp-left-peripheral
   
   - board: nice_nano_v2
     shield: kurnikas-split-lp-right
